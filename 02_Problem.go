@@ -11,10 +11,11 @@ import (
 func requestHandler(w http.ResponseWriter, r *http.Request) {
 
 	//Browser renders html tags
-	w.Header().Set("Content-Type","text/html");
+	w.Header().Set("Content-Type","text/html")
 
 	//Output to browser
 	fmt.Fprintln(w, "<h1>Guessing Game</h1>")
+
 }
 
 func main() {

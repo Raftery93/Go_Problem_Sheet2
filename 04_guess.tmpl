@@ -15,10 +15,9 @@
 
   
   <body>
-    <h2>Please Refresh page twice to generate random number</h2>
+    <h2>Please Refresh page to generate random number</h2>
     <h2>{{.Message}}</h2>
     
-    <!-- a form with action redirecting to /guess using http:GET method-->
     <form action="/guess" method="GET">
     <input type="text" name="guess">
     <input type="submit" value="Guess">

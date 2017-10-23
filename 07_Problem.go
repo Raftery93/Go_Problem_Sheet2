@@ -63,6 +63,9 @@ func guessHandler(w http.ResponseWriter, r *http.Request){
 
 			if guess == target{
 				gm = "Correct lawd!"
+				
+				//Unable to reset cookie for some reason!!!!
+
 			}else if guess > target{
 				gm = "Guess is to high, try again"
 			}else if guess < target{
